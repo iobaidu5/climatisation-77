@@ -1,0 +1,618 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <title>Comment se déroule l’estimation de devis chez MGPS ?</title>
+<meta property="og:title" content="Comment se déroule l’estimation de devis chez MGPS ?" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="MGPS vous propose un devis entièrement gratuit. Nous réalisons les études thermiques internes nécessaires pour tous types d'installations climatiques." />
+<meta property="og:description" content="MGPS vous propose un devis entièrement gratuit. Nous réalisons les études thermiques internes nécessaires pour tous types d'installations climatiques." />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/devis" />
+<meta property="og:url" content="http://localhost:4000/devis" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/devis",
+"description":"MGPS vous propose un devis entièrement gratuit. Nous réalisons les études thermiques internes nécessaires pour tous types d'installations climatiques.",
+"name":"Comment se déroule l’estimation de devis chez MGPS ?"
+}
+</script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQXL9JVT7X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQXL9JVT7X');
+    </script>
+</head>
+
+<body>
+  <section class="Navbar navbar-main fixedNav">
+    <nav class="navbar navbar-expand-lg fixedNav p-0">
+        <div class="container-fluid">
+            <div class="Navbar_image">
+                <a href="./index.html"><img src="./assets/img/logo.png" class="Navbar_image-img"
+                        alt="" /></a>
+            </div>
+            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-2x toggle-button" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <ul class="navbar-nav Navbar_nav mr-auto">
+                    <li class="nav-item Navbar_nav-item m-0 p-0">
+                        <a class="nav-link Navbar_nav-link" href="./index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item m-0 p-0">
+                        <a class="nav-link Navbar_nav-link" href="./qui-sommes-nous.html">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="nav-item dropdown Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link dropdown-toggle  d-flex align-items-center" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> Nos services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 1.6rem; border-color: #14AE9B;">
+                            <ul style="list-style: none; position: relative;">
+                                <li class="climclass"><a class="dropdown-item Navbar_nav-link py-3" href="./climatisation.html"> Climatisation &nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item Navbar_nav-link py-3" href="./chauffage.html"> Chauffage &nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item Navbar_nav-link py-3" href="./ventilation.html"> Ventilation &nbsp;</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-menu clim-hide" aria-labelledby="navbarDropdown">
+                            <ul style="list-style: none;">
+                                <li><a class="dropdown-item Navbar_nav-link py-3" href=""> Résidentiel et petit tertaire</a></li>
+                                <li><a class="dropdown-item Navbar_nav-link py-3" href=""> Tertiare et grandes puissances</a></li>
+                            </ul>
+                        </div>
+
+
+                    </li>
+                    <li class="nav-item Navbar_nav-item m-0 p-0">
+                        <a class="nav-link Navbar_nav-link" href="./nos-travaux.html">Nos références</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav Navbar_nav mr-auto">
+                    <li class="nav-item Navbar_nav-item m-0 p-0 ml-auto">
+                        <a class="nav-link Navbar_nav-btn" href="./devis.html">Demandez votre devis </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+  
+
+  <div class="">
+    <section class="banner-devis bg-blue">
+    <div class="container">
+        <div class="banner_content">
+            <h1 class="banner_content-title">Simuler vos travaux</h1>
+        </div>
+    </div>
+</section>
+<section class="devis bg-blue">
+    <div class="container-fluid">
+        <form class="form contact_content-form" id="devisForm" method="post"
+            action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+            <input type="hidden" name="lang" value="fr">
+            <input type="hidden" name="type" value="devis">
+            <input type="hidden" name="firstName" value="" />
+            <input type="hidden" name="website" value="">
+            <input type="hidden" name="redirectUrl" value="/">
+            <input type="hidden" name="redirectUrl" value="/" />
+            <input type="hidden" name="key" value="">
+            <input type="hidden" name="website" value="" />
+            <div class="etes">
+                <h2 class="devis_header">Vous êtes :</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button" id="Professionnel">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/man-green.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Professionnel</p>
+                    </div>
+                    <div class="devis_button" id="Particulier">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/persons.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Particulier</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concernent">
+                <h2 class="devis_header">Les travaux concernent :</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button votre-maison" id="votre-maison">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/maison.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Votre maison</p>
+                    </div>
+                    <div class="devis_button votre-maison" id="votre-maison">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/appartment.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Votre appartement</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="metier">
+                <h2 class="devis_header">Votre métier ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button matier" id="matier">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/matier.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Maitre d’oeuvre <br>
+                            (bureau d’étude, architecte)</p>
+                    </div>
+                    <div class="devis_button matier" id="matier">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/donnier.png"
+                                class="travaux_button-image--img devis_button-image--img donnier" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Donneur d’ordre<br>(client final)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="nature">
+                <h2 class="devis_header">La nature de votre chantier</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button helmet" id="helmet">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/helmet.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Nouveau chantier</p>
+                    </div>
+                    <div class="devis_button helmet" id="helmet">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/renovation.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Rénovation</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="application">
+                <h2 class="devis_header">Pour quel type d’application ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button tertaire" id="tertaire">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/climatisation.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Tertaire</p>
+                    </div>
+                    <div class="devis_button tertaire" id="tertaire">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/commerce.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Commerce</p>
+                    </div>
+                    <div class="devis_button tertaire" id="tertaire">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/social.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Médico-social</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="besion">
+                <h2 class="devis_header">Pour quel type de besoin ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button" id="climatisationbtn">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/climatisation.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Climatisation</p>
+                    </div>
+                    <div class="devis_button" id="ventilation">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/commerce.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Ventilation</p>
+                    </div>
+                    <div class="devis_button" id="chauffage">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/social.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="climatisation-show">
+                <h2 class="devis_header">Quel type de climatisation vous souhaitez ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button split">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/split.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Mono Split</p>
+                    </div>
+                    <div class="devis_button split">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/multi-split.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Multi Split</p>
+                    </div>
+                    <div class="devis_button split">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/vrv.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">VRV</p>
+                    </div>
+                </div>
+                <div class="devis_buttons">
+                    <div class="devis_button split">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/autres.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Autres</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ventillation-show">
+                <h2 class="devis_header">Quelle est l’énergie de chauffage actuelle de votre logement ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button split-v" id="split-v">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/flux.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Simple flux</p>
+                    </div>
+                    <div class="devis_button split-v" id="split-v">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/fan.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Double flux</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="chauffage-show">
+                <h2 class="devis_header">Quelle est l’énergie de chauffage actuelle de votre logement ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button split-c" id="split-c">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/gas.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage au Gaz</p>
+                    </div>
+                    <div class="devis_button split-c" id="split-c">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/drop.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage au Fioul</p>
+                    </div>
+                    <div class="devis_button split-c" id="split-c">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/electric.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage électrique</p>
+                    </div>
+                </div>
+                <div class="devis_buttons">
+                    <div class="devis_button split-c" id="split-c">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/fire.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage au bois</p>
+                    </div>
+                    <div class="devis_button split-c" id="split-c">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/ac.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Pompe à chaleur</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="besoin">
+                <h2 class="devis_header">Pour quel type de besoin ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button climatisation" id="climatisation">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/climatisation.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Climatisation</p>
+                    </div>
+                    <div class="devis_button climatisation" id="climatisation">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/cahuffage.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logement">
+                <h2 class="devis_header">Quelle est l’énergie de chauffage actuelle de votre logement ?</h2>
+                <div class="devis_buttons">
+                    <div class="devis_button electrique" id="electrique">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/electric.png"
+                                class="travaux_button-image--img devis_button-image--img" alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage électrique</p>
+                    </div>
+                    <div class="devis_button electrique" id="electrique">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/ac.png" class="travaux_button-image--img devis_button-image--img"
+                                alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Pompe à chaleur</p>
+                    </div>
+                    <div class="devis_button electrique" id="electrique">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/gas.png" class="travaux_button-image--img devis_button-image--img"
+                                alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage au Gaz</p>
+                    </div>
+                </div>
+                <div class="devis_buttons">
+                    <div class="devis_button electrique" id="electrique">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/fire.png" class="travaux_button-image--img devis_button-image--img"
+                                alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage au bois</p>
+                    </div>
+                    <div class="devis_button electrique" id="electrique">
+                        <div class="travaux_button-image devis_button-image">
+                            <img src="./assets/img/drop.png" class="travaux_button-image--img devis_button-image--img"
+                                alt="" />
+                        </div>
+                        <p class="travaux_button-title mt-4">Chauffage au Fioul</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="areaId" id="areaId">
+                <h2 class="devis_header">Quelle est la supérficie de votre logement ? </h2>
+                <div class="container devis_input">
+                    <input type="text" class="devis_input-field" name="area" placeholder="139 m2">
+                </div>
+                <div class="d-flex justify-content-center my-5" id="area">
+                    <div class="devis_input-button">Continuer</div>
+                </div>
+            </div>
+
+
+            <div class="appointment">
+                <h2 class="devis_header">Souhaitez-vous un rendez-vous dans</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="container devis_input">
+                                <div class="devis_input-field color-primary" id="week" name="week"
+                                    placeholder="">La semaine</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="container devis_input">
+                                <div class="devis_input-field color-primary" id="month" name="month"
+                                    placeholder="">Le mois</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="container devis_input">
+                                <div class="devis_input-field color-primary" id="matter" name="matter"
+                                    placeholder="">Peu importe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center my-5" id="matterbtn">
+                        <div class="devis_input-button">Continuer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <h2 class="devis_header">Vos coordonées </h2>
+                <div class="container">
+                    <div class="devis_input">
+                        <label for="name" class="devis_input-label">Nom</label>
+                        <input type="text" class="devis_input-field" id="name" name="name" placeholder="Dupont">
+                    </div>
+                    <div class="devis_input">
+                        <label for="lastname" class="devis_input-label">Prénom</label>
+                        <input type="text" class="devis_input-field" id="lastname" name="lastname" placeholder="Jean">
+                    </div>
+                    <div class="devis_input">
+                        <label for="email" class="devis_input-label">Votre adsresse mail</label>
+                        <input type="email" class="devis_input-field" id="email" name="email"
+                            placeholder="exemple@devis.fr">
+                    </div>
+                    <div class="devis_input">
+                        <label for="phone" class="devis_input-label">Votre numéro de télephone</label>
+                        <input type="text" class="devis_input-field" id="phone" name="phone"
+                            placeholder="00.00.00.00.00">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey=""></div>
+                    <br />
+                    <div id="devis-form-response"></div>
+                </div>
+                <div class="checkbox d-flex justify-content-center my-5">
+                    <input name="condition" type="checkbox" style="width: 4rem; height: 2rem;" />
+                    <span class="menu_content-p text-center">
+                        En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                        de vos données par ce site *</span>
+                    <i class="fa fa-info-square" aria-hidden="true"></i>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button type="submit" class="devis_input-button"
+                        value="Submit">Envoyer ma demande</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+  </div>
+
+  <footer class="footer">
+    <div class="container-fluid p-l-r">
+        <div class="footer_header">
+            <h3 class="footer_header-title">Votre professionnel en rénovation énergetique</h3>
+            <p class="footer_header-p">Nous intervenons dans le secteur du 77</p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <div class="footer_content-logo">
+                        <img src="./assets/img/footer-logo.png" class="footer_content-logo--img" alt="" />
+                    </div>
+                    <div class="footer_content-social">
+                        <p class="footer_content-social--p">Suivez-nous</p>
+                        <img src="./assets/img/facebook.png" class="footer_content-social--icon" />
+                        <img src="./assets/img/linkedin.png" class="footer_content-social--icon" />
+                    </div>
+                    <div class="footer_content-bottom">
+                        <h3 class="footer_content-bottom--title">Un projet ?</h3>
+                        <div class="stripe_content-button">
+                            <a class="nav-link Navbar_nav-btn" href="./devis.html">Demandez votre devis </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <h3 class="footer_content-title">À PROPOS</h3>
+                    <ul class="footer_content-ul">
+                        <li class="footer_content-li"><a href="./index.html"
+                                class="footer_content-li--link">Accueil</a></li>
+                        <li class="footer_content-li"><a href="./qui-sommes-nous.html"
+                                class="footer_content-li--link">Qui sommes-nous ?</a></li>
+                        <li class="footer_content-li"><a href="./climatisation.html"
+                                class="footer_content-li--link">Climatisation</a></li>
+                        <li class="footer_content-li"><a href="./ventilation.html"
+                                class="footer_content-li--link">Ventilation</a></li>
+                        <li class="footer_content-li"><a href="./chauffage.html"
+                                class="footer_content-li--link">Chauffage</a></li>
+                        <li class="footer_content-li"><a href="./nos-travaux.html"
+                                class="footer_content-li--link">Nos travaux</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <h3 class="footer_content-title">CONTACTEZ-NOUS</h3>
+                    <ul class="footer_content-ul">
+                        <li class="footer_content-li"> Address : <p class="footer_content-li--link text-center">
+                                7 Rue de la Plaine de la Croix Besnard -  77000 Vaux-le-Pénil</p>
+                        </li>
+                        <li class="footer_content-li">Téléphone : <a href="tel:01 64 38 35 82"
+                                class="footer_content-li--link">01 64 38 35 82</a></li>
+                        <li class="footer_content-li">E-mail : <a href="mailto: mgps-idf@outlook.com"
+                                class="footer_content-li--link">mgps-idf@outlook.com</a></li>
+                        <li class="footer_content-li">Nos horaires : <p class="footer_content-li--link">7J/7 – 24H/24
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 700
+    });
+</script>
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="./assets/js/popper.min.js"></script>
+<script defer src="./assets/js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <div class="sticky">
+    <div class="sticky_top">
+      <div class="sticky_top-icon">
+        <img src="./assets/img/phone.png" class="sticky_top-icon--img" alt="" />
+      </div>
+      <div class="sticky_top-content">
+        <p class="sticky_top-content--p">Contactez-nous</p>
+        <a href="tel:01 64 38 35 82"><p class="sticky_top-content--p">01 64 38 35 82</p></a>
+      </div>
+    </div>
+    <hr class="sticky_divider">
+    <div class="sticky_top">
+      <div class="sticky_top-icon">
+        <img src="./assets/img/devis.png" class="sticky_top-icon--img" alt="" />
+      </div>
+      <div class="sticky_top-content">
+        <p class="sticky_top-content--p">Devis gratuit</p>
+        <a class="sticky_top-content--btn" href="./devis.html">Demandez votre devis </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
