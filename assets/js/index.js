@@ -53,10 +53,60 @@ $('.matier').click(function () {
     $('.metier').hide('slow');
 });
 
+$('.metierBack').click(function () {
+    $('.etes').show('slow');
+    $('.metier').hide('slow');
+});
+
+$('.concernentBack').click(function () {
+    $('.etes').show('slow');
+    $('.concernent').hide('slow');
+});
+
+
+
+
 $('.helmet').click(function () {
     $('.application').show('slow');
     $('.nature').hide('slow');
 });
+
+$('.natureBack').click(function () {
+    $('.metier').show('slow');
+    $('.nature').hide('slow');
+});
+
+$('.applicationBack').click(function () {
+    $('.nature').show('slow');
+    $('.application').hide('slow');
+});
+
+$('.besionBack').click(function () {
+    $('.application').show('slow');
+    $('.besion').hide('slow');
+});
+
+$('.besion-Back').click(function () {
+    $('.concernent').show('slow');
+    $('.besoin').hide('slow');
+});
+
+$('.logementBack').click(function () {
+    $('.besoin').show('slow');
+    $('.logement').hide('slow');
+});
+
+$('.climatisationBack').click(function () {
+    $('.besion').show('slow');
+    $('.climatisation-show').hide('slow');
+});
+
+$('.areaBack').click(function () {
+    $('.climatisation-show').show('slow');
+    $('.areaId').hide('slow');
+});
+
+
 
 $('.tertaire').click(function () {
     $('.besion').show('slow');
@@ -66,6 +116,16 @@ $('.tertaire').click(function () {
 $('#climatisationbtn').click(function () {
     $('.climatisation-show').show('slow');
     $('.besion').hide('slow');
+});
+
+$('.appointmentBack').click(function () {
+    $('.areaId').show('slow');
+    $('.appointment').hide('slow');
+});
+
+$('.detailsBack').click(function () {
+    $('.appointment').show('slow');
+    $('.details').hide('slow');
 });
 
 $('#ventilation').click(function () {
@@ -129,12 +189,18 @@ $('#matterbtn').click(function () {
 
 $('#week').click(function () {
     $(this).addClass("btn-active")
+    $('#month').removeClass("btn-active")
+    $('#matter').removeClass("btn-active")
 });
 
 $('#month').click(function () {
     $(this).addClass("btn-active")
+    $('#week').removeClass("btn-active")
+    $('#matter').removeClass("btn-active")
 });
 
 $('#matter').click(function () {
     $(this).addClass("btn-active")
+    $('#week').removeClass("btn-active")
+    $('#month').removeClass("btn-active")
 });

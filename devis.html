@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./assets/js/popper.min.js"></script>
     <script defer src="./assets/js/bootstrap.min.js"></script>
@@ -71,8 +71,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 1.6rem; border-color: #14AE9B;">
                             <ul style="list-style: none; position: relative;">
-                                <li class="climclass"><a class="dropdown-item Navbar_nav-link py-3" href="./climatisation.html"> Climatisation </a></li>
-                                <li><a class="dropdown-item Navbar_nav-link py-3" href="./chauffage.html"> Chauffage </a></li>
+                                <li class="climclass"><a class="dropdown-item Navbar_nav-link py-3" href="./climatisation.html"> Climatisation &nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item Navbar_nav-link py-3" href="./chauffage.html"> Chauffage &nbsp;<i class="fas fa-chevron-right"></i></a></li>
                                 <li><a class="dropdown-item Navbar_nav-link py-3" href="./ventilation.html"> Ventilation &nbsp;</a></li>
                             </ul>
                         </div>
@@ -117,11 +117,11 @@
             <input type="hidden" name="lang" value="fr">
             <input type="hidden" name="type" value="devis">
             <input type="hidden" name="firstName" value="" />
-            <input type="hidden" name="website" value="">
+            <input type="hidden" name="website" value="337">
             <input type="hidden" name="redirectUrl" value="/">
             <input type="hidden" name="redirectUrl" value="/" />
-            <input type="hidden" name="key" value="">
-            <input type="hidden" name="website" value="" />
+            <input type="hidden" name="key" value="6LfsF7QiAAAAAPoeHZR6e7-7HoHTGQY4s2xsZ-PS">
+            <input type="hidden" name="website" value="337" />
             <div class="etes">
                 <h2 class="devis_header">Vous êtes :</h2>
                 <div class="devis_buttons">
@@ -144,6 +144,9 @@
 
             <div class="concernent">
                 <h2 class="devis_header">Les travaux concernent :</h2>
+                <div class="concernentBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button votre-maison" id="votre-maison">
                         <div class="travaux_button-image devis_button-image">
@@ -165,13 +168,16 @@
 
             <div class="metier">
                 <h2 class="devis_header">Votre métier ?</h2>
+                <div class="metierBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button matier" id="matier">
                         <div class="travaux_button-image devis_button-image">
                             <img src="./assets/img/matier.png"
                                 class="travaux_button-image--img devis_button-image--img" alt="" />
                         </div>
-                        <p class="travaux_button-title mt-4 ml--30">Maitre d’oeuvre <br>
+                        <p class="travaux_button-title mt-4">Maitre d’oeuvre <br>
                             (bureau d’étude, architecte)</p>
                     </div>
                     <div class="devis_button matier" id="matier">
@@ -187,6 +193,9 @@
 
             <div class="nature">
                 <h2 class="devis_header">La nature de votre chantier</h2>
+                <div class="natureBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button helmet" id="helmet">
                         <div class="travaux_button-image devis_button-image">
@@ -208,24 +217,27 @@
 
             <div class="application">
                 <h2 class="devis_header">Pour quel type d’application ?</h2>
+                <div class="applicationBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button tertaire" id="tertaire">
                         <div class="travaux_button-image devis_button-image">
-                            <img src="./assets/img/climatisation.png"
+                            <img src="./assets/img/love.png"
                                 class="travaux_button-image--img devis_button-image--img" alt="" />
                         </div>
                         <p class="travaux_button-title mt-4">Tertaire</p>
                     </div>
                     <div class="devis_button tertaire" id="tertaire">
                         <div class="travaux_button-image devis_button-image">
-                            <img src="./assets/img/commerce.png"
+                            <img src="./assets/img/global.png"
                                 class="travaux_button-image--img devis_button-image--img" alt="" />
                         </div>
                         <p class="travaux_button-title mt-4">Commerce</p>
                     </div>
                     <div class="devis_button tertaire" id="tertaire">
                         <div class="travaux_button-image devis_button-image">
-                            <img src="./assets/img/social.png"
+                            <img src="./assets/img/bag.png"
                                 class="travaux_button-image--img devis_button-image--img" alt="" />
                         </div>
                         <p class="travaux_button-title mt-4">Médico-social</p>
@@ -236,6 +248,9 @@
 
             <div class="besion">
                 <h2 class="devis_header">Pour quel type de besoin ?</h2>
+                <div class="besionBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button" id="climatisationbtn">
                         <div class="travaux_button-image devis_button-image">
@@ -263,6 +278,9 @@
 
             <div class="climatisation-show">
                 <h2 class="devis_header">Quel type de climatisation vous souhaitez ?</h2>
+                <div class="climatisationBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button split">
                         <div class="travaux_button-image devis_button-image">
@@ -366,6 +384,9 @@
 
             <div class="besoin">
                 <h2 class="devis_header">Pour quel type de besoin ?</h2>
+                <div class="besion-Back">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button climatisation" id="climatisation">
                         <div class="travaux_button-image devis_button-image">
@@ -386,6 +407,9 @@
 
             <div class="logement">
                 <h2 class="devis_header">Quelle est l’énergie de chauffage actuelle de votre logement ?</h2>
+                <div class="logementBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="devis_buttons">
                     <div class="devis_button electrique" id="electrique">
                         <div class="travaux_button-image devis_button-image">
@@ -429,8 +453,11 @@
 
             <div class="areaId" id="areaId">
                 <h2 class="devis_header">Quelle est la supérficie de votre logement ? </h2>
+                <div class="areaBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="container devis_input">
-                    <input type="text" class="devis_input-field" name="area" placeholder="Exemple : 139 m2">
+                    <input type="text" class="devis_input-field" name="area" placeholder="139 m2">
                 </div>
                 <div class="d-flex justify-content-center my-5" id="area">
                     <div class="devis_input-button">Continuer</div>
@@ -440,6 +467,9 @@
 
             <div class="appointment">
                 <h2 class="devis_header">Souhaitez-vous un rendez-vous dans</h2>
+                <div class="appointmentBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -469,6 +499,9 @@
 
             <div class="details">
                 <h2 class="devis_header">Vos coordonées </h2>
+                <div class="detailsBack">
+                    <i class="fas fa-chevron-left backIcon-i"></i>
+                </div>
                 <div class="container">
                     <div class="devis_input">
                         <label for="name" class="devis_input-label">Nom</label>
@@ -476,7 +509,7 @@
                     </div>
                     <div class="devis_input">
                         <label for="lastname" class="devis_input-label">Prénom</label>
-                        <input type="text" class="devis_input-field" id="lastname" name="lastname" placeholder="Guillaume">
+                        <input type="text" class="devis_input-field" id="lastname" name="lastname" placeholder="Jean">
                     </div>
                     <div class="devis_input">
                         <label for="email" class="devis_input-label">Votre adsresse mail</label>
@@ -490,8 +523,8 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey=""></div>
+                <div class="form-group d-flex justify-content-center my-5">
+                    <div class="g-recaptcha" data-sitekey="6LfsF7QiAAAAABlbiGzXNu_nsaSMtCfB4ZXytyC-"></div>
                     <br />
                     <div id="devis-form-response"></div>
                 </div>
@@ -503,7 +536,7 @@
                     <i class="fa fa-info-square" aria-hidden="true"></i>
                 </div>
                 <div class="d-flex justify-content-center my-3">
-                    <button type="submit" class="devis_input-button"
+                    <button type="submit" class="devis_input-button form-submit"
                         value="Submit">Envoyer ma demande</button>
                 </div>
             </div>

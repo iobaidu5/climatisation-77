@@ -60,7 +60,7 @@ jQuery(document).ready(function ($) {
 var CaptchaCallback = function () {
   jQuery(".g-recaptcha").each(function () {
     grecaptcha.render(this, {
-      sitekey: "",
+      sitekey: "6LfsF7QiAAAAABlbiGzXNu_nsaSMtCfB4ZXytyC-",
       callback: correctCaptcha,
     });
   });

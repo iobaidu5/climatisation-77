@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./assets/js/popper.min.js"></script>
     <script defer src="./assets/js/bootstrap.min.js"></script>
@@ -71,8 +71,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 1.6rem; border-color: #14AE9B;">
                             <ul style="list-style: none; position: relative;">
-                                <li class="climclass"><a class="dropdown-item Navbar_nav-link py-3" href="./climatisation.html"> Climatisation </a></li>
-                                <li><a class="dropdown-item Navbar_nav-link py-3" href="./chauffage.html"> Chauffage </a></li>
+                                <li class="climclass"><a class="dropdown-item Navbar_nav-link py-3" href="./climatisation.html"> Climatisation &nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item Navbar_nav-link py-3" href="./chauffage.html"> Chauffage &nbsp;<i class="fas fa-chevron-right"></i></a></li>
                                 <li><a class="dropdown-item Navbar_nav-link py-3" href="./ventilation.html"> Ventilation &nbsp;</a></li>
                             </ul>
                         </div>
@@ -112,28 +112,30 @@
 </section>
 <section class="travaux bg-blue">
     <div class="container">
-        <div class="row justify-content-center mb-5 pb-5" id="particulier">
+        <div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-6">
-                <a href="/nos-travaux.html#professionnel" class="travaux_link">
-                    <div class="travaux_button">
-                        <div class="travaux_button-image">
-                            <img src="./assets/img/man-green.png" class="travaux_button-image--img" alt="" />
-                            <p class="travaux_button-title">Professionnel</p>
-                        </div>
+                <a href="./nos-travaux.html" class="travaux_link">
+                <div class="travaux_button">
+                    <div class="travaux_button-image">
+                        <img src="./assets/img/man-green.png" class="travaux_button-image--img" alt="" />
+                        <p class="travaux_button-title">Professionnel</p>
                     </div>
-                </a>
+                </div>
+            </a>
             </div>
             <div class="col-md-6">
+                <a href="./nos-travaux-particulier.html" class="travaux_link">
                 <div class="travaux_button mt-5">
                     <div class="travaux_button-image">
                         <img src="./assets/img/persons-white.png" class="travaux_button-image--img" alt="" />
                         <p class="travaux_button-title">Particulier</p>
                     </div>
                 </div>
+            </a>
             </div>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./chaigneau-chaumes-en-brie.html#chaigneau" class="bg-blue travaux_link">
+            <a href="./chaigneau.html" class="bg-blue travaux_link">
                 <div class="travaux_card">
                     <div class="row">
                         <div class="col-md-4 m-0 p-0">
@@ -166,40 +168,40 @@
             </a>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./beaumont-village.html#beaumont" class="bg-blue travaux_link">
-                <div class="travaux_card">
-                    <div class="row">
-                        <div class="col-md-8 m-0 p-0">
-                            <div class="travaux_card-content">
-                                <ul class="travaux_card-content-ul">
-                                    <li class="travaux_card-content-li">
-                                        <h3 class="travaux_card-content-title dot-before">Particulier (rénovation)</h3>
-                                    </li>
-                                    <li class="travaux_card-content-li">
-                                        <h3 class="travaux_card-content-title dot-before">Climatisation (Hitachi)</h3>
-                                        <p class="travaux_card-content-p">trois unités intérieures et un groupe extérieur
-                                        </p>
-                                    </li>
-                                    <li class="travaux_card-content-li">
-                                        <h3 class="travaux_card-content-title dot-before">3 jours</h3>
-                                    </li>
-                                    <li class="travaux_card-content-li">
-                                        <h3 class="travaux_card-content-title location-before">Beaumont-Village (37)</h3>
-                                    </li>
-                                </ul>
-                            </div>
+            <a href="./psa-pantin.html" class="bg-blue travaux_link">
+            <div class="travaux_card">
+                <div class="row">
+                    <div class="col-md-8 m-0 p-0">
+                        <div class="travaux_card-content">
+                            <ul class="travaux_card-content-ul">
+                                <li class="travaux_card-content-li">
+                                    <h3 class="travaux_card-content-title dot-before">Particulier (rénovation)</h3>
+                                </li>
+                                <li class="travaux_card-content-li">
+                                    <h3 class="travaux_card-content-title dot-before">Climatisation (Hitachi) : </h3>
+                                    <p class="travaux_card-content-p"> trois unités intérieures et un groupe extérieur
+                                    </p>
+                                </li>
+                                <li class="travaux_card-content-li">
+                                    <h3 class="travaux_card-content-title dot-before">3 jours</h3>
+                                </li>
+                                <li class="travaux_card-content-li">
+                                    <h3 class="travaux_card-content-title location-before">Beaumont-Village (37)</h3>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 m-0 p-0">
-                            <div class="travaux_card-image">
-                                <img src="./assets/img/particuliers/2.png" class="travaux_card-image--img" alt="" />
-                            </div>
+                    </div>
+                    <div class="col-md-4 m-0 p-0">
+                        <div class="travaux_card-image">
+                            <img src="./assets/img/particuliers/2.png" class="travaux_card-image--img" alt="" />
                         </div>
                     </div>
                 </div>
+            </div>
             </a>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./milly-la-foret.html#milly" class="bg-blue travaux_link">
+            <a href="./capta.html" class="bg-blue travaux_link">
                 <div class="travaux_card">
                     <div class="row">
                         <div class="col-md-4 m-0 p-0">
@@ -232,7 +234,7 @@
             </a>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./paris16.html#paris16" class="bg-blue travaux_link">
+            <a href="./normal.html" class="bg-blue travaux_link">
                 <div class="travaux_card">
                     <div class="row">
                         <div class="col-md-8 m-0 p-0">
@@ -265,7 +267,7 @@
             </a>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./bois-le-roi.html#boisleroi" class="bg-blue travaux_link">
+            <a href="./naturalia.html" class="bg-blue travaux_link">
                 <div class="travaux_card">
                     <div class="row">
                         <div class="col-md-4 m-0 p-0">
@@ -299,7 +301,7 @@
             </a>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./savigny-sur-orge.html#savigny" class="bg-blue travaux_link">
+            <a href="./francofa.html" class="bg-blue travaux_link">
                 <div class="travaux_card">
                     <div class="row">
                         <div class="col-md-8 m-0 p-0">
@@ -332,7 +334,7 @@
             </a>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./paris1.html#paris1" class="bg-blue travaux_link">
+            <a href="./naturalia.html" class="bg-blue travaux_link">
                 <div class="travaux_card">
                     <div class="row">
                         <div class="col-md-4 m-0 p-0">
@@ -366,7 +368,7 @@
             </a>
         </div>
         <div class="bg-blue travaux_padding">
-            <a href="./orsay.html#orsay" class="bg-blue travaux_link">
+            <a href="./francofa.html" class="bg-blue travaux_link">
                 <div class="travaux_card">
                     <div class="row">
                         <div class="col-md-8 m-0 p-0">
